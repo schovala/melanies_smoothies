@@ -22,7 +22,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 #st.stop()
 # convert snowpark dataframe to pandas dataframe
 pd_df = my_dataframe.to_pandas()
-st.datframe(pd_df)
+st.dataframe(pd_df)
 st.stop()
 
 ingrediants_list = st.multiselect(
